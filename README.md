@@ -44,6 +44,6 @@ Förslag på en skalbar mappstruktur för ett React-projekt med Jest och React T
 
 
 ### Kör testet
-'''
+``` 
 npm run test
-'''
+``` 
