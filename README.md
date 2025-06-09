@@ -5,9 +5,9 @@
 
 ## Installera Vitest och RTL
 
-'''
+``` 
 npm install --save-dev vitest @testing-library/react jsdom
-''' 
+``` 
 
 vitest: test-ramverket.
 @testing-library/react: för att rendera React-komponenter i tester.
@@ -15,7 +15,7 @@ jsdom: emulerar DOM så att vi kan testa React-komponenter.
 
 ## Lägg till detta i vite.config.js:
 
-'''
+``` 
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -23,14 +23,14 @@ test: {
 environment: 'jsdom',
 globals: true,
 },
-'''
+``` 
 
 ## Lägg till i package.json
-'''
+``` 
 "scripts": {
 "test": "vitest"
 }
-'''
+``` 
 
 ### Skapa en komponent
 
